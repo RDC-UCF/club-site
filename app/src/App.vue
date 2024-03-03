@@ -1,10 +1,14 @@
 <script setup lang="ts">
 // import HelloWorld from "./components/HelloWorld.vue";
 import Nav from "./components/Nav.vue";
+import "./style.css";
 </script>
 
 <template>
-  <div><Nav /></div>
+  <!-- <div class="mx-[5%] md:mx-[5%] lg:mx-[5%] min-h-screen flex flex-col"> -->
+  <div class="mx-[5%] min-h-screen flex flex-col">
+    <Nav />
+  </div>
   <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>
 
