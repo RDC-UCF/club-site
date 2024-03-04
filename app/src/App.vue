@@ -2,12 +2,20 @@
 // import HelloWorld from "./components/HelloWorld.vue";
 import Nav from "./components/Nav.vue";
 import "./style.css";
+import Title from "./components/Title.vue";
+import KnightOne from "./components/KnightOne.vue";
+import KnightTwo from "./components/KnightTwo.vue";
 </script>
 
 <template>
   <!-- <div class="mx-[5%] md:mx-[5%] lg:mx-[5%] min-h-screen flex flex-col"> -->
   <div class="mx-[5%] min-h-screen flex flex-col">
     <Nav />
+    <Title />
+    <div class="flex-1 flex-row relative hidden bg-main-text-color md:block">
+      <KnightOne />
+      <KnightTwo />
+    </div>
   </div>
   <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>
