@@ -5,7 +5,8 @@ import "./style.css";
 import Title from "./components/Title.vue";
 import KnightOne from "./components/KnightOne.vue";
 import KnightTwo from "./components/KnightTwo.vue";
-
+import AboutOne from "./components/AboutOne.vue";
+import AboutTwo from "./components/AboutTwo.vue";
 </script>
 
 <template>
@@ -16,6 +17,10 @@ import KnightTwo from "./components/KnightTwo.vue";
     <div class="flex-1 flex-row relative hidden bg-main-text-color md:block">
       <KnightOne />
       <KnightTwo />
+    </div>
+    <div class="flex-1 flex-row relative hidden bg-main-text-color md:block">
+      <AboutOne />
+      <AboutTwo />
     </div>
   </div>
   <!-- <HelloWorld msg="Vite + Vue" /> -->
