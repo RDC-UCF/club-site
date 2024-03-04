@@ -5,6 +5,7 @@ import "./style.css";
 import Title from "./components/Title.vue";
 import KnightOne from "./components/KnightOne.vue";
 import KnightTwo from "./components/KnightTwo.vue";
+
 </script>
 
 <template>
