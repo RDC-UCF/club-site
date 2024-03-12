@@ -8,10 +8,8 @@ import AboutTwo from "./components/AboutTwo.vue";
 </script>
 
 <template>
-
-  <div class="mx-[5%] min-h-screen flex flex-col">
+  <div class="min-h-screen flex flex-col bg-gradient-to-t from-[#B5A26A] to-[#F8FAFC]">
     <Nav />
-    <Title />
     <div class="flex-1 flex-row relative hidden bg-main-text-color md:block">
       <KnightOne />
       <KnightTwo />
