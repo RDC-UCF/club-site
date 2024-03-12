@@ -2,7 +2,6 @@
 // import HelloWorld from "./components/HelloWorld.vue";
 import Nav from "./components/Nav.vue";
 import "./style.css";
-import Title from "./components/Title.vue";
 import KnightOne from "./components/KnightOne.vue";
 import KnightTwo from "./components/KnightTwo.vue";
 import AboutOne from "./components/AboutOne.vue";
