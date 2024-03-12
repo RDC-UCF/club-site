@@ -4,6 +4,7 @@
       <div class="flex justify-between items-center w-full p-4">
         <a href="/" class="flex items-center">
           <img src="/public/logo1.png" alt="RDC @ UCF" class="h-8">
+          <span class="flex items-center space-x-4 justify-end">RDC @ UCF</span>
         </a>
         <div class="flex items-center space-x-4 justify-end">
           <a href="/about" class="hover:text-gray-700">About</a>
@@ -46,6 +47,7 @@ export default {
 
 <style scoped>
 nav {
+  font: 550 16px/24px 'Inter Semi-Bold', sans-serif;
   transition: opacity 1.5s ease-in-out, 
   transform 1.5s ease-in-out;
 }
