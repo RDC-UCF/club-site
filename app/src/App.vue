@@ -12,11 +12,11 @@ import AboutTwo from "./components/AboutTwo.vue";
     <Nav />
     <div class="flex-1 px-4 md:px-8 lg:px-16 xl:px-32" style="padding-top: var(--navbar-height);">
       <div class="flex flex-col md:flex-row items-center justify-between text-center md:text-left h-full">
-        <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold my-4 text-gray-800 flex-1">
+        <h1 class="title text-4xl md:text-6xl lg:text-8xl xl:text-10xl font-bold my-4 text-gray-800 flex-1">
           Roblox<br> Development<br> Club at UCF.
         </h1>
         <div class="flex-1">
-          <KnightOne class="w-full h-auto"/>
+          <KnightOne class="logo w-full h-auto"/>
         </div>
       </div>
     </div>
@@ -30,8 +30,12 @@ import AboutTwo from "./components/AboutTwo.vue";
   </div>
 </template>
 
-<style>
-:root {
-  --navbar-height: 64px;
+<style scoped>
+.title {
+  transition: font-size 0.3s ease-in-out;
+}
+
+.logo {
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 </style>
