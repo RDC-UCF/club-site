@@ -1,8 +1,6 @@
 <script setup lang="ts">
-// import HelloWorld from "./components/HelloWorld.vue";
 import Nav from "./components/Nav.vue";
 import "./style.css";
-import Title from "./components/Title.vue";
 import KnightOne from "./components/KnightOne.vue";
 import KnightTwo from "./components/KnightTwo.vue";
 import AboutOne from "./components/AboutOne.vue";
@@ -10,33 +8,33 @@ import AboutTwo from "./components/AboutTwo.vue";
 </script>
 
 <template>
-  <!-- <div class="mx-[5%] md:mx-[5%] lg:mx-[5%] min-h-screen flex flex-col"> -->
-  <div class="mx-[5%] min-h-screen flex flex-col">
+  <div class="flex flex-col bg-gradient-to-t from-[#B5A26A] to-[#F8FAFC]">
     <Nav />
-    <Title />
-    <div class="flex-1 flex-row relative hidden bg-main-text-color md:block">
-      <KnightOne />
+    <div class="flex-1 flex flex-col md:flex-row items-center justify-center text-center md:text-left pt-[var(--navbar-height)] px-[2rem] md:px-[4rem] lg:px-[6rem] xl:px-[8rem]" style="min-height: calc(100vh - var(--navbar-height));">
+      <h1 class="title text-4xl md:text-6xl lg:text-8xl xl:text-16xl font-bold my-4 text-gray-800">
+        Roblox<br> Development<br> Club at UCF.
+      </h1>
+      <KnightOne class="logo w-[80vw] h-[80vh] md:w-[55vw] md:h-[55vh] lg:w-[80vw] lg:h-[80vh] object-contain mx-auto"/>
+    </div>
+    <div class="section min-h-screen">
       <KnightTwo />
     </div>
-    <div class="flex-1 flex-row relative hidden bg-main-text-color md:block">
+    <div class="section min-h-screen">
       <AboutOne />
       <AboutTwo />
     </div>
   </div>
-  <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>
 
-<!-- <style scoped>
+<style scoped>
+.title {
+  transition: font-size 0.3s ease-in-out;
+}
+
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style> -->
+
+.section {
+  min-height: 100vh;}
+</style>
